@@ -5,7 +5,7 @@ body {
   background-color: #ffffff;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1, 5;
+  line-height: 1.5;
 }
 /* reset */
 
@@ -182,6 +182,8 @@ button:focus {
 /* #region hero-section */
 .hero-section {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -199,25 +201,22 @@ button:focus {
   padding-top: 68px;
 }
 .header-button {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
+  display: block;
   border-radius: 4px;
-  padding: 16px 32px;
+  border: none;
   min-width: 169px;
   height: 56px;
-  text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   margin: 0 auto;
-  /* padding-bottom: 68px; */
+  padding-bottom: 68px;
+  text-align: center;
+  padding: 16px 32px;
 }
 /* #endregion hero-section */
 
-/* #region Advatages section */
-.advatages-container {
+/* #region Advantages section */
+.advantages-container {
   display: flex;
   align-items: center;
 }
@@ -239,16 +238,18 @@ button:focus {
   display: flex;
   align-items: center;
   gap: 24px;
+  align-items: flex-start;
 }
 
 .advantages-list-item {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.advantages-section-item {
+.advantages-item {
   margin-bottom: 8px;
 }
-/* #endregion Advatages section  */
+
+/* #endregion Advantages section  */
 
 /* #region Team section */
 .team-section {
@@ -266,12 +267,13 @@ button:focus {
 }
 
 .team-list-item {
-  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
-.team-image {
-  margin-bottom: 32px;
+.team-desc-container {
+  padding: 32px 0;
 }
 
 .team-section-item {
@@ -293,6 +295,7 @@ button:focus {
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .portfolio-list-item {
@@ -300,6 +303,7 @@ button:focus {
 }
 
 .portfolio-desc-container {
+  border-top: none;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -308,8 +312,9 @@ button:focus {
   height: 120px;
 }
 .portfolio-item {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
+
 .portfolio-desc {
   margin-bottom: 32px;
 }
@@ -323,6 +328,7 @@ button:focus {
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-description {
